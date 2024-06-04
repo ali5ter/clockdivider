@@ -791,15 +791,6 @@
       <layer>_1</layer>
     </diylc.connectivity.SolderPad>
     <diylc.connectivity.SolderPad>
-      <name>Pad4</name>
-      <size value="0.09" unit="in"/>
-      <color hex="000000"/>
-      <point x="1.8" y="4.0"/>
-      <type>ROUND</type>
-      <holeSize value="0.8" unit="mm"/>
-      <layer>_1</layer>
-    </diylc.connectivity.SolderPad>
-    <diylc.connectivity.SolderPad>
       <name>Pad5</name>
       <size value="0.09" unit="in"/>
       <color hex="000000"/>
@@ -1063,9 +1054,9 @@
       <length value="0.2" unit="in"/>
       <width value="0.09" unit="in"/>
       <points>
-        <point x="4.0" y="2.6"/>
-        <point x="3.9999999999999996" y="3.8"/>
-        <point x="4.0" y="3.2"/>
+        <point x="3.7" y="4.3"/>
+        <point x="3.6999999999999993" y="3.8"/>
+        <point x="3.7" y="4.05"/>
       </points>
       <bodyColor hex="e1f0ff"/>
       <borderColor hex="808080"/>
@@ -2142,7 +2133,7 @@
     <diylc.misc.Label>
       <name>LAB29</name>
       <point x="2.6" y="0.9"/>
-      <text>CLOCK DIVIDER based on Michael Barton BMC063</text>
+      <text>CLOCK DIVIDER</text>
       <font name="AmericanTypewriter" size="48" style="0"/>
       <color hex="333333"/>
       <horizontalAlignment>LEFT</horizontalAlignment>
@@ -2194,7 +2185,7 @@
       <point x="2.6" y="1.3"/>
       <text>Layout by Alister Lewis-Bowen</text>
       <font name="AmericanTypewriter" size="22" style="0"/>
-      <color hex="666666"/>
+      <color hex="999999"/>
       <horizontalAlignment>LEFT</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
       <orientation>DEFAULT</orientation>
@@ -2202,15 +2193,15 @@
     <diylc.misc.WrapLabel>
       <name>L1</name>
       <controlPoints>
-        <point x="1.4" y="1.3"/>
+        <point x="1.3" y="1.3"/>
         <point x="2.195" y="1.8"/>
       </controlPoints>
-      <firstPoint x="1.4" y="1.3"/>
+      <firstPoint x="1.3" y="1.3"/>
       <secondPoint x="2.195" y="1.8"/>
       <font reference="../../diylc.misc.Label/font"/>
       <color hex="000000"/>
       <horizontalAlignment>RIGHT</horizontalAlignment>
-      <value>Use a 10 or 16 pin shrouded header to avoid use of polarity protection.&lt;br&gt;&lt;br&gt; &lt;br&gt;TPs should read aprox. 9.8V pulse peak</value>
+      <value>Use a 10 or 16 pin shrouded header to avoid use of polarity protection.&lt;br&gt;&lt;br&gt; &lt;br&gt;TPs should read aprox. 9.57V pulse peak</value>
     </diylc.misc.WrapLabel>
     <diylc.misc.Label>
       <name>LAB31</name>
@@ -2466,7 +2457,7 @@
       <orientation>_180</orientation>
     </diylc.electromechanical.NeutrikJack1__4>
     <diylc.passive.Resistor>
-      <name>R1</name>
+      <name>100K</name>
       <alpha>127</alpha>
       <length value="0.5" unit="in"/>
       <width value="0.125" unit="in"/>
@@ -2484,7 +2475,102 @@
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
+      <value value="100.0" unit="K"/>
+      <power>HALF</power>
+      <colorCode>_4_BAND</colorCode>
+      <shape>Standard</shape>
+    </diylc.passive.Resistor>
+    <diylc.passive.RadialCeramicDiskCapacitor>
+      <name>10nF</name>
+      <alpha>127</alpha>
+      <length value="0.25" unit="in"/>
+      <width value="0.125" unit="in"/>
+      <points>
+        <point x="3.9999999999999996" y="4.3"/>
+        <point x="4.0" y="2.8"/>
+        <point x="4.0" y="3.55"/>
+      </points>
+      <bodyColor hex="f0e68c"/>
+      <borderColor hex="a8a162"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <pinSpacing value="0.1" unit="in"/>
+      <value value="10.0"/>
+      <voltage>_63V</voltage>
+    </diylc.passive.RadialCeramicDiskCapacitor>
+    <diylc.passive.Resistor>
+      <name>100K</name>
+      <alpha>127</alpha>
+      <length value="0.5" unit="in"/>
+      <width value="0.125" unit="in"/>
+      <points>
+        <point x="3.9" y="4.0"/>
+        <point x="3.9" y="4.3"/>
+        <point x="3.9" y="4.15"/>
+      </points>
+      <bodyColor hex="82cffd"/>
+      <borderColor hex="5b90b1"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>true</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
       <value value="100.0"/>
+      <power>HALF</power>
+      <colorCode>_4_BAND</colorCode>
+      <shape>Standard</shape>
+    </diylc.passive.Resistor>
+    <diylc.passive.Resistor>
+      <name>10K</name>
+      <alpha>127</alpha>
+      <length value="0.5" unit="in"/>
+      <width value="0.125" unit="in"/>
+      <points>
+        <point x="2.7" y="3.3"/>
+        <point x="2.7" y="3.7"/>
+        <point x="2.7" y="3.5"/>
+      </points>
+      <bodyColor hex="82cffd"/>
+      <borderColor hex="5b90b1"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>true</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="10.0"/>
+      <power>HALF</power>
+      <colorCode>_4_BAND</colorCode>
+      <shape>Standard</shape>
+    </diylc.passive.Resistor>
+    <diylc.passive.Resistor>
+      <name>10K</name>
+      <alpha>127</alpha>
+      <length value="0.5" unit="in"/>
+      <width value="0.125" unit="in"/>
+      <points>
+        <point x="3.0" y="3.4"/>
+        <point x="3.0" y="3.7"/>
+        <point x="3.0" y="3.55"/>
+      </points>
+      <bodyColor hex="82cffd"/>
+      <borderColor hex="5b90b1"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>true</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="10.0"/>
       <power>HALF</power>
       <colorCode>_4_BAND</colorCode>
       <shape>Standard</shape>
@@ -2551,24 +2637,6 @@
         <point x="1.6" y="3.7"/>
         <point x="1.1" y="3.7"/>
         <point x="1.1" y="3.4"/>
-      </controlPoints2>
-      <color hex="00ff00"/>
-      <pointCount>FOUR</pointCount>
-      <style>SOLID</style>
-      <smooth>true</smooth>
-      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
-      <gauge>_22</gauge>
-      <striped>false</striped>
-      <stripeColor hex="ffff00"/>
-    </diylc.connectivity.HookupWire>
-    <diylc.connectivity.HookupWire>
-      <name>W24</name>
-      <alpha>127</alpha>
-      <controlPoints2>
-        <point x="1.8" y="4.0"/>
-        <point x="1.7" y="4.0"/>
-        <point x="1.7" y="4.0"/>
-        <point x="1.6" y="4.0"/>
       </controlPoints2>
       <color hex="00ff00"/>
       <pointCount>FOUR</pointCount>
@@ -2676,16 +2744,6 @@
       <orientation>DEFAULT</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
-      <name>LAB52</name>
-      <point x="1.9" y="4.0"/>
-      <text>GND</text>
-      <font name="Dialog" size="14" style="0"/>
-      <color hex="000000"/>
-      <horizontalAlignment>LEFT</horizontalAlignment>
-      <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>DEFAULT</orientation>
-    </diylc.misc.Label>
-    <diylc.misc.Label>
       <name>LAB53</name>
       <point x="1.9" y="4.2"/>
       <text>RST</text>
@@ -2713,6 +2771,29 @@
       <striped>false</striped>
       <stripeColor hex="ffff00"/>
     </diylc.connectivity.HookupWire>
+    <diylc.misc.WrapLabel>
+      <name>L2</name>
+      <controlPoints>
+        <point x="2.6" y="5.2"/>
+        <point x="5.7" y="5.4"/>
+      </controlPoints>
+      <firstPoint x="2.6" y="5.2"/>
+      <secondPoint x="5.7" y="5.4"/>
+      <font name="Dialog" size="14" style="0"/>
+      <color hex="000000"/>
+      <horizontalAlignment>LEFT</horizontalAlignment>
+      <value>v0.1 Initial layout based on Michael Barton&apos;s circuit (BMC063)&lt;br&gt;v0.2 Fixed CLK &amp; RST voltage level &amp; normalize inputs to GND&lt;br&gt;v0.3 Convert RST to trigger pulse &amp; pull down unused outputs</value>
+    </diylc.misc.WrapLabel>
+    <diylc.misc.Label>
+      <name>LAB20</name>
+      <point x="7.0" y="1.1"/>
+      <text>Outputs</text>
+      <font name="Dialog" size="14" style="0"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
   </components>
   <groups/>
   <lockedLayers/>
