@@ -3802,6 +3802,17 @@
 		)
 		(uuid "86e322d5-abb6-453f-bf0f-1771ff5e1492")
 	)
+	(text "Pull down unused outputs"
+		(exclude_from_sim no)
+		(at 137.668 132.334 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b78552f0-8935-4729-993c-ac26b945ed5e")
+	)
 	(text "Aprox. 9.57V"
 		(exclude_from_sim no)
 		(at 102.87 38.1 0)
@@ -3811,6 +3822,17 @@
 			)
 		)
 		(uuid "d7636898-aeba-4aef-9312-83834b31da3b")
+	)
+	(text "Normalize inputs to GND"
+		(exclude_from_sim no)
+		(at 27.178 96.266 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df7be977-8f98-4c46-8ffc-b0e6e806bf26")
 	)
 	(text "Aprox. 9.57V"
 		(exclude_from_sim no)
