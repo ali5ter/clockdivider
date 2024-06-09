@@ -126,17 +126,6 @@
       <hideShortLeads>false</hideShortLeads>
       <style>SOLID</style>
     </diylc.connectivity.Jumper>
-    <diylc.connectivity.TraceCut>
-      <name>Cut6</name>
-      <size value="0.08" unit="in"/>
-      <fillColor hex="ffffff"/>
-      <borderColor hex="ff0000"/>
-      <boardColor hex="f8ebb3"/>
-      <cutBetweenHoles>false</cutBetweenHoles>
-      <orientation>VERTICAL</orientation>
-      <holeSpacing value="0.1" unit="in"/>
-      <point x="0.0" y="0.0"/>
-    </diylc.connectivity.TraceCut>
     <diylc.connectivity.Jumper>
       <name>J6</name>
       <alpha>127</alpha>
@@ -675,24 +664,6 @@
       <point x="5.2" y="1.6"/>
       <value></value>
     </diylc.connectivity.Eyelet>
-    <diylc.connectivity.SolderPad>
-      <name>Pad1</name>
-      <size value="0.09" unit="in"/>
-      <color hex="000000"/>
-      <point x="0.0" y="0.0"/>
-      <type>ROUND</type>
-      <holeSize value="0.8" unit="mm"/>
-      <layer>_1</layer>
-    </diylc.connectivity.SolderPad>
-    <diylc.connectivity.SolderPad>
-      <name>Pad11</name>
-      <size value="0.09" unit="in"/>
-      <color hex="000000"/>
-      <point x="0.0" y="0.0"/>
-      <type>ROUND</type>
-      <holeSize value="0.8" unit="mm"/>
-      <layer>_1</layer>
-    </diylc.connectivity.SolderPad>
     <diylc.connectivity.Eyelet>
       <name>Eyelet2</name>
       <size value="0.2" unit="in"/>
