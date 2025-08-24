@@ -1,2 +1,2 @@
-> **⚠️ Archived 2025-08-21. No longer maintained.**
+> **⚠️ Archived 2025-08-24. No longer maintained.**
 
